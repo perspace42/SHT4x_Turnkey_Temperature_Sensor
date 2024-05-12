@@ -11,6 +11,8 @@ import time
 import board
 import adafruit_sht4x
 
+convertToF = lambda celsius: (celsius * 9/5) + 32
+
 i2c = board.I2C()  # uses board.SCL and board.SDA
 sht = adafruit_sht4x.SHT4x(i2c)
 print("Found SHT4x with serial number", hex(sht.serial_number))
@@ -21,7 +23,7 @@ print()
 
 while True:
     temperature, relative_humidity = sht.measurements
-    print(f"Temperature: {temperature:0.1f} C")
+    print(f"Temperature: {convertToF(temperature):0.1f} F")
     print(f"Humidity: {relative_humidity:0.1f} %")
     print("")
     time.sleep(1)
