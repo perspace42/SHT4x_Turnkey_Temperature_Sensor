@@ -23,7 +23,5 @@ print()
 
 while True:
     temperature, relative_humidity = sht.measurements
-    print(f"Temperature: {convertToF(temperature):0.1f} F")
-    print(f"Humidity: {relative_humidity:0.1f} %")
-    print("")
+    print(f"Temperature: {convertToF(temperature):0.1f} F\tHumidity: {relative_humidity:0.1f} %")
     time.sleep(1)

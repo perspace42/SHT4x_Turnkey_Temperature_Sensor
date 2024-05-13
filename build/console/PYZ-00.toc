@@ -1,4 +1,4 @@
-('C:\\Users\\Scott\\Desktop\\Software Projects\\Embedded Systems\\Dad '
+('C:\\Users\\Scott\\Desktop\\Software Projects\\Embedded Systems\\Python '
  'SHT4x_Turnkey\\build\\console\\PYZ-00.pyz',
  [('__future__',
    'C:\\Users\\Scott\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\__future__.py',

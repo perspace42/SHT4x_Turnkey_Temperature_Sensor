@@ -34,6 +34,7 @@ while max_no_data_iterations > 0:
     # Check if serial port line is empty
     if line:
         print(line)
+
         max_no_data_iterations = 10  # Reset the counter if data is received
     else:
         max_no_data_iterations -= 1  # Decrement the counter if no data is received
